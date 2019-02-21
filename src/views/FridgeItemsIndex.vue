@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="fridge-items-index">
     <h1>Fridge Items</h1>
     <div v-for="fridge_item in fridge_items">
       <h2>{{ fridge_item.name }}</h2>
@@ -34,4 +34,3 @@ export default {
   }
 };
 </script>
-
