@@ -1,5 +1,6 @@
 <template>
   <div class="fridge-items-new">
+    <h1>New Fridge Item</h1>
     <ul>
       <li v-for="error in errors">{{ error }}</li>
     </ul>
@@ -9,7 +10,7 @@
         Name: <input v-model="newFridgeItemName">
       </div>
       <div>
-        Purchase_date: <input v-model="newFridgeItemPurchaseDate">
+        Purchase Date: <input v-model="newFridgeItemPurchaseDate">
       </div>
       <div>
         Price: <input v-model="newFridgeItemPrice">
