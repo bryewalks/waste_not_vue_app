@@ -1,4 +1,13 @@
 <template>
+  <div class="about">
+    <h1> This is the about page </h1>
+
+  </div>
+
+</template>
+
+
+<!-- <template>
   <span class="border border-dark">
   <div class="about">
 
@@ -16,9 +25,9 @@
   </span>
 
 </template>
+ -->
 
-
-<style>
+<!-- <style>
 
        
 body {
@@ -43,5 +52,5 @@ div {
   padding: 75px;
 }
 </style>
-
+ -->
 
