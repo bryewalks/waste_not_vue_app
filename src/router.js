@@ -17,7 +17,7 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
-    { path: '/', name: 'home', component: FridgeItemsIndex},
+    { path: '/', name: 'home', component: Home},
     { path: '/about', name: 'about', component: About},
     { path: '/fridge_items', name: 'fridge-items-index', component: FridgeItemsIndex},
     { path: '/fridge_items/new', name: 'fridge-items-new', component: FridgeItemsNew },

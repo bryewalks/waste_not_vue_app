@@ -4,14 +4,14 @@
 
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <router-link class="navbar-brand" to="/">Welcome to Waste Not App</router-link>
+      <router-link class="navbar-brand" to="/">Waste Not</router-link>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <router-link class="btn btn-light"to="/fridge_items/new">Enter Products</router-link>
+            <router-link class="btn btn-light"to="/fridge_items/">Your Fridge</router-link>
             <!-- <button type="button" class="btn btn-light">Light</button>
    -->     </li>
     <li class="nav-item dropdown">

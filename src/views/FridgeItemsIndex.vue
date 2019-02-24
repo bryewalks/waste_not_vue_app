@@ -1,16 +1,15 @@
 <template>
   <div class="fridge-items-index">
-    <h1>All Fridge Items</h1>
+    <h1>Your Fridge</h1>
     
     <div class="row">
       <div class="col-md-4" v-for="fridge_item in fridge_items">
         <div class="card">
-          <router-link v-bind:to="'/fridge_items/' + fridge_item.id">
-            <img class="card-img-top" v-bind:src="fridge_item.image_url" v-bind:alt="fridge_item.name">
-          </router-link>
           <div class="card-body">
             <h5 class="card-title">
+          <router-link v-bind:to="'/fridge_items/' + fridge_item.id">
               {{ fridge_item.name }}
+          </router-link>
             </h5>
           </div>
         </div>
