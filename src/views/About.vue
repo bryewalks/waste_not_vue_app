@@ -8,7 +8,7 @@
       <p class="text-center"> In the U.S. alone, food waste is estimated at between 30-40 percent of the food supply.</p> 
       
       <h5 class="text-center"> Our mission</h5>
-      <p class="text-center"> Our mission at Not Wasted is to not only make you aware of this issue, but prevent you from contributing to it further more. </p>
+      <p class="text-center"> Our mission at Waste Not is to not only make you aware of this issue, but prevent you from contributing to it further. </p>
       <p class="text-center"> This application will help you keep track of the perishable items you purchased, let you know when they are close to expiring, so that you can consume them before it's too late.</p>
 
     </div>
@@ -18,32 +18,9 @@
 
 
 
-<!-- <style>
-
-       
-body {
-  background-color: rgb(241,235,221);
-}
- 
-
-div {
-  text-align: center;
-}
-
-div {
-  border-top: double;
-}
-
-div {
-  border-bottom: double;
-}
-
-div {
-  border: 2.5px solid gray;
-  padding: 75px;
-}
+<style>
 </style>
- -->
+
 
 <script>
 export default {

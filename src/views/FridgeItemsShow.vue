@@ -1,8 +1,13 @@
 <template>
   <div class="fridge-items-show">
     <h1>{{ fridge_item.name }}</h1>
+    <p>User ID: {{ fridge_item.user_id }}</p>
     <p>Price: {{ fridge_item.price }}</p>
     <p>Purchase Date: {{ fridge_item.purchase_date }}</p>  
+    <p>Category: {{ fridge_item.category_id }}</p>
+    <p>{{ fridge_item.status }}</p>
+
+    <button v-on:click="destroyFridgeItem()" class="btn btn-danger">Throw Out</button>
   </div>
 </template>
 
@@ -19,7 +24,8 @@
                      id: "",
                      name: "",
                      price: "",
-                     purchase_date: ""
+                     purchase_date: "",
+                     category_id: ""
                      }
       };
     },
@@ -30,7 +36,15 @@
           this.fridge_item = response.data;
         });
     },
-    methods: {}
+    methods: {
+      destroyFridgeItem: function() {
+        axios.delete("/api/fridge_items/" + this.fridge_item.id)
+          .then(response => {
+            console.log("Success", response.data);
+            this.$router.push("/fridge_items");
+          });
+      }
+    }
   }
 </script>
 

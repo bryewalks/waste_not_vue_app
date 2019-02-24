@@ -1,5 +1,10 @@
-body { 
-  background-image: url('dynamic-style.png');
+body  {
+  background-image: url('light-grey-terrazzo.png');
   font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
+
 }
 
+.carousel-inner {
+ width: 100%;
+ height: 100%;
+}
