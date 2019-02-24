@@ -12,6 +12,10 @@
       <p class="text-center"> This application will help you keep track of the perishable items you purchased, let you know when they are close to expiring, so that you can consume them before it's too late.</p>
 
     </div>
+    <div class="d-flex justify-content-center">
+      <router-link :to="'/signup'" class="btn btn-success">Sign Up</router-link>
+      <router-link :to="'/login'" class="btn btn-primary">Login</router-link>
+    </div>
   </div>
 </template>
 
