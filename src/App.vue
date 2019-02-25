@@ -22,7 +22,6 @@
           <router-link class="dropdown-item" to="/signup">Sign Up</router-link>
           <router-link class="dropdown-item" to="/login">Login</router-link>
           <router-link class="dropdown-item" to="/logout">Logout</router-link>
-
         </div>
       </li>
         </ul>
