@@ -9,14 +9,17 @@
       <div>
         Name: <input v-model="newFridgeItemName">
       </div>
-      <div>
-        Price: <input v-model="newFridgeItemPrice">
       <div class="form-group row">
-        <label for="purchase-date-input" class="col-2 col-form-label">Purchase Date</label>
-        <div class="col-10">
+        <label for="purchase-date-input text-center" class="col-2 col-form-label">Purchase Date: </label>
+        <div class="col-3">
           <input v-model="newFridgeItemPurchaseDate" class="form-control" type="date" value="08-19-2011" id="purchase-date-input">
         </div>
       </div>
+      <div class="form-group row">
+        <label class="col-1">Quantity: </label>
+        <div class="col-1">
+          <input v-model="newFridgeItemQuantity" class="text-center form-control" type="number" value="1">
+        </div>
       </div>
       <div>
         <select v-model="newFridgeItemCategoryId" class="custom-select mr-sm-4">
@@ -48,6 +51,7 @@
         newFridgeItemPurchaseDate: "",
         newFridgeItemPrice: "",
         newFridgeItemCategoryId: "",
+        newFridgeItemQuantity: "",
         errors: []
       };
     },
@@ -59,7 +63,8 @@
           name: this.newFridgeItemName,
           purchase_date: this.newFridgeItemPurchaseDate,
           price: this.newFridgeItemPrice,
-          category_id: this.newFridgeItemCategoryId
+          category_id: this.newFridgeItemCategoryId,
+          quantity: this.newFridgeItemQuantity
         };
         axios.post("/api/fridge_items", params)
           .then(response => {
